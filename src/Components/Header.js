@@ -8,23 +8,27 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 // import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ChatIcon from '@mui/icons-material/Chat';
 import { useDispatch } from 'react-redux';
-import { logout } from './features/userSlice';
+import { logout } from '../features/userSlice';
 import { auth } from './firebase';
 // import logo from './ConnectifyLogos/logo-transparent-png.png'
-import logo1 from './ConnectifyLogos/logo.png'
-function Header() {
+import logo1 from '../ConnectifyLogos/logo.png'
+ 
 
+
+function Header() {
 
   const dispatch = useDispatch();
   const logOutOfApp = () => {
     dispatch(logout())
     auth.signOut();
   }
+  
+
   return (
     <div className='header'>
         <div className='header__left'>
-            <img src={logo1} alt='Connectify Logo' />
-
+            <img src={logo1} alt='Connectify Logo'/>
+            
             <div className='header__search'>
                 <SearchIcon />
                 <input placeholder = "Search" type="text" />
