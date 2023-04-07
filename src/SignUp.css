@@ -1,4 +1,4 @@
-.login {
+.signup {
     display: grid;
     place-items: center;
     margin-left: auto;
@@ -9,7 +9,7 @@
     width:100%;
 }
 
-.login > img {
+.signup > img {
     object-fit:fill;
     height: 150px;
     
@@ -17,12 +17,12 @@
     margin-bottom: 20px;
 }
 
-.login > form {
+.signup > form {
     display: flex;
     flex-direction: column;
 }
 
-.login > form > input {
+.signup > form > input {
     width : 350px;
     height: 50px;
     font-size: 20px;
@@ -31,7 +31,7 @@
     border-radius: 5px;
 }
 
-.login > form > button {
+.signup > form > button {
     width: 365px;
     height: 50px;
     font-size: large;
@@ -40,11 +40,4 @@
     border-radius: 5px;
 }
 
-.Login__Register {
-    color: #2772db;
-    cursor: pointer;
-}
 
-.login > p{
-    margin-top: 20px;
-}

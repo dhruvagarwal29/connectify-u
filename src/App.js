@@ -3,11 +3,12 @@ import './App.css';
 import Header from './Header';
 import Sidebar from './Sidebar'
 import Feed from './Feed'
-import Login from './Login';
 import Widgets from './Widgets';
 import {  useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
 import { auth } from './firebase';
+import Welcome from './Welcome';
+
 
 function App() { 
 
@@ -37,21 +38,35 @@ function App() {
   
   return (
     <div className="app">
+
       {/*Header */}
       <Header />
       {!user ? (
-      <Login />
+        <Welcome />
       ):(
-      
-      <div className="app__body">
-        
+        <div className="app__body">
         <Sidebar />
         <Feed />
         <Widgets />   
       </div>
       )}
+      {/* <SignUp />
+      {!user ? (
+      <Login />
+      ):(
+      
+      <div className="app__body">
+        <Sidebar />
+        <Feed />
+        <Widgets />   
+      </div>
+      )} */}
     </div>
+
+  
   );
+  
 }
 
 export default App;
+
