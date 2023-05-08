@@ -10,7 +10,7 @@ import Post from './Post';
 import { db } from './firebase';
 import firebase from 'firebase/compat/app';
 import { useSelector } from 'react-redux';
-import { selectUser } from '../features/userSlice';
+import { selectUser } from './features/userSlice';
 import FlipMove from 'react-flip-move';
 
 function Feed() {

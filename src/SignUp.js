@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import './SignUp.css'
 import { auth } from './firebase';
 import { useDispatch } from 'react-redux';
-import { login } from '../features/userSlice';
-import logo from '../ConnectifyLogos/logo-transparent-png.png'
+import { login } from './features/userSlice';
+import logo from './ConnectifyLogos/logo-transparent-png.png'
 
 function SignUp() {
     const [email, setEmail] = useState("");
